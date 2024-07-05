@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Connect Device</h1>
+
+    <button onclick="addDevice()">Add Device</button>
+
+    <br>
+    <br>
+    <div>
+        <label for="">Select your wifi network</label>
+        <select name="" id="networks">
+            <option value="" disabled>Connect device first</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Enter wifi network password</label>
+        <input type="text" id="password">
+    </div>
+    <button onclick="sendWifiCredentials()">Connect Device</button>
+
+    <script src="./bluetooth.js"></script>
+</body>
+</html>
