@@ -1,4 +1,5 @@
 
+let bluetoothDevice;
 let server;
 let networks;
 
@@ -88,7 +89,7 @@ async function addDevice() {
     
 
     try {
-        const device = await requestDevice();
+        bluetoothDevice = await requestDevice();
 
         await connectToDevice();
         await requestAvailableNetworks();
